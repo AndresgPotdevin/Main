@@ -1,0 +1,21 @@
+Heroes of Pymoli Data Analysis
+
+From the observable purchased data we can infer:
+
+- The majority of the player base is male, making up for over 80% of it. Females
+make up around 18%, with the renaming 2% remaining undisclosed.
+
+- Even though there is a big discrepancy in gender demographics, primarily skewed
+towards male. The spending patters seem very similar. The average spending for both
+genders is around $4. Females make up around 15% of total income, while males
+represent around  82%, closely resembling their demographic representation.
+
+- The majority of the player-base lies between the ages of 15 to 29, with the age
+range of 20 to 24 years being the most profitable. 20 to 24 year old's make up
+for 47% of the total income, with 15 to 19 year old's coming second at a 17%
+
+- The most popular and profitable item in the game is undoubtedly "Oathbreaker,
+Last Hope of the Breaking Storm", with a total of 12 sales, and $50 dollars in
+revenue. This makes up 2% of the total income. The item "Nirvana" is also worth
+mentioning, with 3 less sales than our top seller it managed to make almost as
+much profit. 
