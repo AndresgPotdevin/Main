@@ -1,0 +1,17 @@
+Pyber Data Analysis
+
+While observing the data from Pyber we can notice a few trends at glance:
+
+Urban cities have by far the highest demand for rides, as well as the highest
+number of drivers available. Rural, as expected is the opposite, while suburban
+cities lie somewhere in the middle.
+
+The availability and ease of access of Urban cities does bring the cost of rides
+down, making it overall the cheapest demographic. Suburban and rural cities trend
+to have similar average prices, with rural having a few outliers on the higher end.
+
+Even though Suburban cities can have the highest costs per ride, suburban cities
+seem to have a more consistent demand for rides, while still maintaining the
+prices fairly high compared to urban cities. Overall, it seems that Suburban
+could be the most profitable segment for un Uber driver, having less competition
+while maintaining higher ride fees.  
