@@ -1,0 +1,9 @@
+Observable weather trends as we apporach the Equator:
+
+1) There is a positive correlation between distance to the equator and maximum temperatures. As expected, the closer the are to the center, the hotter the temperature. The graph follows a bell curve with decreseasing temperatures as we get further from the equator line.
+
+2)High himudity cities are not exclusive to the ones closer to the equator, but we can notice a lack of low humidity cities around it. Closer to the equator we have the highest concentration of humid cities. Likewise, as we get further from it we start seeing more and more drier cities. It's worth noting that some cities have a really high humidity while remaining far from the Equator line.
+
+3)Cloudiness does not seem to have a relationship with latitute. Clouds appear to be evenly distributed around the globe.
+
+4) Wind speeds seem to be lower around the equator line, but not by much. We start seeing some higher wind speeds as we get away from the center, but for the most part it appears evenly distributed. 
