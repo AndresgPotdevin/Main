@@ -1,0 +1,42 @@
+Sub wallstreet()
+
+Dim ws As Worksheet
+    For Each ws In Worksheets
+    ws.Range("I1").Value = "Ticker"
+    ws.Range("J1").Value = "Total Stock Volume"
+
+lastrow = ws.Cells(Rows.Count, "A").End(xlUp).Row + 1
+
+Dim ticker As String
+
+Dim volumetotal As Double
+volumetotal = 0
+
+Dim summary_table_row As Integer
+summary_table_row = 2
+
+For i = 2 To lastrow
+
+    If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+        ticker = ws.Cells(i, 1).Value
+        volumetotal = volumetotal + ws.Cells(i, 7).Value
+
+        ws.Range("I" & summary_table_row).Value = ticker
+
+        ws.Range("J" & summary_table_row).Value = volumetotal
+
+        summary_table_row = summary_table_row + 1
+
+        volumetotal = 0
+
+    Else
+
+        volumetotal = volumetotal + ws.Cells(i, 7).Value
+
+    End If
+
+Next i
+Next ws
+
+
+End Sub
