@@ -3,7 +3,6 @@ import pymongo
 
 app = Flask(__name__)
 
-# setup mongo connection
 conn = "mongodb://localhost:27017"
 client = pymongo.MongoClient(conn)
 
@@ -11,7 +10,6 @@ client = pymongo.MongoClient(conn)
 def index():
     mars_dict = client.db.mars.find_one()
 
-    # render an index.html template and pass it the data you retrieved from the database
     return render_template("index.html", mars_dict=mars_dict)
 
 @app.route("/scrape")
