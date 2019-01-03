@@ -49,7 +49,9 @@ d3.json("https://api.spacexdata.com/v3/launches?pretty=true")
       .attr("class",function(d){
         if (d.launch_success === false){
           return "table-danger"
-        } else {return "table-success"}
+        } else {
+          return "table-success"
+        }
       });
 
     let td = tr.selectAll("td") //Create Table Colums
