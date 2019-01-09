@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles.css">
       <!-- Bootswatch Slate Theme-->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-ywjdn7N8uoxzIfGl7jlEBlqw2BNicOSzZDgo7A2ffvbM24Ct9plRp7KwtaIqZ33j" crossorigin="anonymous">
+    <!-- Bootswatch Sketchy Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/litera/bootstrap.min.css">
       <!-- Bootstrap Default CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
     <!-- Import D3 -->
@@ -18,7 +20,7 @@
   <body>
     <!-- Header -->
     <header>
-      <h1 class="text-warning">Space-X Mission Data</h1>
+      <h1 class="text-success">Space-X Mission Data</h1>
     </header>
     <!-- Nav Bar -->
       {% include 'includes/_navbar.html' %}
@@ -28,6 +30,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- Custom Scripts -->
-    <script src="scripts/js/app.js"type="text/javascript"></script>
+<script src="{{ url_for('static', filename='app.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='app.missions.js') }}" type="text/javascript"></script>
+
   </body>
 </html>

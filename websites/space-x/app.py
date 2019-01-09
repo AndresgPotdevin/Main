@@ -15,8 +15,8 @@ c = conn.cursor()
 @app.route('/api/all_launches')
 def get_data():
     response = requests.get('https://api.spacexdata.com/v3/launches')
-    data = response.json()
-    return Response(data)
+    data = json.dumps(response)
+    return data
 
 # Defining Routes
 @app.route('/')

@@ -32,15 +32,15 @@
 // let allMissions = d3.json("https://api.spacexdata.com/v3/missions")
 //   .then((data)=>{
 //     console.log(data);
-  // });
+//   });
 
 var tbody = d3.select("tbody");
 
 d3.json("https://api.spacexdata.com/v3/launches?pretty=true")
   .then(function(missions) { //Data manipulation after promise resolves
-    // Mission Table
     console.log(missions);
-    let tr = d3.select("#mission-table") //Create Table Rows
+    // Mission Table
+    let tr = d3.select("tbody") //Create Table Rows
       .selectAll("tr")
       .data(missions)
       .enter()
