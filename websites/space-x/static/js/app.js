@@ -11,13 +11,15 @@ d3.json("http://127.0.0.1:5000/db/launches")
       .enter()
       .append("tr")
       .attr("class",function(d){
-        if (d.launch_success === false){
-          return "table-danger"
-        } else {
-          return "table-success"
+        if (d.launch_success===true)
+        {
+            return "table-success";
+        }else if (d.launch_success===false) {
+            return "table-danger";
+        }else{
+          return "table-info";
         }
       });
-
     let td = tr.selectAll("td")
       .data(function (d) {
         return [d.launch_year,d.mission_name,d.rocket.rocket_name,d.launch_success];

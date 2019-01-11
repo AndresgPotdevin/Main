@@ -1,10 +1,11 @@
+# Dependencies:
+# ============================================================================ #
 import pymongo
 import requests
 import json
 from pymongo import MongoClient
-from pprint import pprint
 
-# API URLs:
+# Defining API URL endpoints:
 # ============================================================================ #
 allCapsules = 'capsules'
 allCores = 'cores'
@@ -31,7 +32,7 @@ print(allURLs)
 client = MongoClient('mongodb://localhost:27017/')
 db = client['spaceX']
 
-# API Connection:
+# Space-X API Connection & Data import to MongoDB:
 # ============================================================================ #
 for url in allURLs:
     response = requests.get('https://api.spacexdata.com/v3/' + url)
