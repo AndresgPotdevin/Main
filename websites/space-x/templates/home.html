@@ -12,16 +12,16 @@
   <div class="row">
     <div class="col-lg-4">
       <div class="container table-responsive">
-        <h2 class="text-secondary text-center">Launch Table</h2>
+        <h2 class="text-secondary text-center">All Launches to Date</h2>
         <div class="jumbotron overflow-auto" style="height: 500px">
           <div class="container">
             <table id="mission-table" class="table table-hover table-bordered table-condensed table-sm table-responsive">
               <thead>
                 <tr>
-                  <th>Launch Date</th>
+                  <th>Date</th>
                   <th>Mission Name</th>
-                  <th>Rocket Name</th>
-                  <th>Mission Success</th>
+                  <th>Rocket</th>
+                  <th>Success</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -32,11 +32,8 @@
     </div>
     <div class="col-lg-8">
       <div class="">
-        <h2 class="text-secondary text-center">Falcon 9</h2>
+        <h2 class="text-secondary text-center">Launch Information</h2>
         <div class="container jumbotron" style="height:500px">
-          <!-- <img class="img-responsive" src="images/svg/avocado_treat.svg" alt="Bear" style="width:auto"> -->
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1" id="DESIGNS" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
           <title property="dc:title">to launch</title><desc property="dc:description">An icon for "launch" from the Avocado series on to [icon]. Downloaded from http://www.toicon.com/icons/avocado_launch by 76.122.84.211 on 2018-12-28. Licensed CC-BY, see http://toicon.com/license/ for details.</desc>
           <g>
@@ -59,9 +56,42 @@
     </div>
   </div>
   <div class="row">
-    <div class="container" id="Map">
+    <div class="container">
+      <div class="jumbotron">
+        <div id="map" style="height: 500px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container jumbotron" id="mission-data">
 
     </div>
   </div>
+  <div class="row">
+    <div class="container jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="card-img-bottom" src="{{ url_for('static', filename='img/jpeg/elon-cartoon-crop.jpg') }}" alt="Card image cap">
+        </div>
+        <div class="col-md-8">
+          <div class="row" style="height: 100%">
+            <div class="card bg-light mb-3 " style="max-width: 100%; height:100%">
+              <div class="card-header"> <h3>Things Elon Says:</h3> </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">Elong Musk<cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+              <div class="footer">
+                <button type="button" class="btn btn-danger btn-lg">Random Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 {% endblock %}

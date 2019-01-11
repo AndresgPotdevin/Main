@@ -52,6 +52,7 @@ var sites = [{
 for (var i = 0; i < sites.length; i++) {
   var city = sites[i];
   L.marker(city.location)
-    .bindPopup("<h1>" + city.name + "</h1> <hr> <h3> Number of Launches " + city.launches + "</h3> <hr> <h3> Info on Launch Site: " + city.info + "</h3>")
+    .bindPopup(`<h3> ${city.name} </h3> <hr> <h5> Number of Launches: ${city.launches} <h5> <hr> <h6> Info:</h6> ${city.info} `
+, {maxWidth:500})
     .addTo(myMap);
 }
