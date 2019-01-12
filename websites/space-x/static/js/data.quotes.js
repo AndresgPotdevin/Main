@@ -1,4 +1,4 @@
-var data = [{
+var elonQuotes = [{
     datetime: "1/1/2018",
     city: " ",
     state: " ",
@@ -133,5 +133,17 @@ var data = [{
     durationMinutes: " ",
     comments: "I believe there’s some explanation for this universe, which you might call God."
   },
-  
 ];
+
+function elonQuote(){
+  d3.selectAll("#remove").remove();
+  d3.selectAll("#quote").selectAll("div").selectAll("p")
+    .data(elonQuotes)
+    .enter()
+    .filter(function(d, i) {return i === Math.floor(Math.random() * 15) + 1})
+    .append("p")
+    .attr("id","remove")
+    .text((d)=>{
+      return d.comments;
+    });
+}
